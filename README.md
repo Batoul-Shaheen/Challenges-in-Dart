@@ -161,7 +161,7 @@ void main() {
     curr = curr.next;
   }
 }
-``
+```
 
 **Challenge 4: Remove All Occurrences ->** Create a function that removes all occurrences of a specific element from a linked list. The implementation is similar to the removeAfter method that you implemented earlier
 - **My Solution**
