@@ -86,7 +86,6 @@ void main() {
 class Node {
  int value;
  Node? next;
-
  Node(this.value, [this.next]);
 }
 
@@ -128,7 +127,6 @@ void main() {
   class Node {
   final int data;
   Node? next;
-
   Node(this.data, [this.next]);
 }
 
