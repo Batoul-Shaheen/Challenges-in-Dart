@@ -24,32 +24,27 @@ void main() {
 
 ```dart
 bool isBalanced(String input) {
-  List<String> stack = [];
+  int counter = 0;
 
   for (int i = 0; i < input.length; i++) {
     String char = input[i];
 
     if (char == '(') {
-      stack.add(char);
+      counter++;
     } else if (char == ')') {
-     
-      if (stack.isNotEmpty) {
-        stack.removeLast();
-      } else {
-        return false;
-      }
+      counter--;
+
     }
   }
-
-  return stack.isEmpty;
+  return counter == 0;
 }
 
 void main() {
   String str1 = "h((e))llo(world)()";
-  print(isBalanced(str1)); 
+  print(isBalanced(str1));  
 
   String str2 = "(hello world";
-  print(isBalanced(str2)); 
+  print(isBalanced(str2));  
 }
 ```
 
