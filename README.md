@@ -1,6 +1,6 @@
-# Challenges-in-Dart
+# ✨ Challenges-in-Dart
 
-## Stacks:
+## ✨ Stacks:
 ## Challenges:
 
 **Challenge 1: Reverse a List ->** Create a function that prints the contents of a list in reverse order.
@@ -48,7 +48,7 @@ void main() {
 }
 ```
 
-## LinkedList:
+## ✨ LinkedList:
 ## Challenges:
 
 **Challenge 1: Print in Reverse ->** Create a function that prints the nodes of a linked list in reverse order
@@ -123,8 +123,8 @@ void main() {
 **Challenge 3: Reverse a Linked List ->** Create a function that reverses a linked list. You do this by manipulating the nodes so that they’re linked in the other direction.
 - **My Solution**
 
-  ```dart
-  class Node {
+```dart
+class Node {
   final int data;
   Node? next;
   Node(this.data, [this.next]);
@@ -133,8 +133,8 @@ void main() {
 Node? reverseList(Node? head) {
   if (head == null || head.next == null) return head;
 
-   Node? prev = null;
-   Node? current = head;
+  Node? prev = null;
+  Node? current = head;
 
   while (current != null) {
     var nextNode = current.next;
@@ -158,7 +158,7 @@ void main() {
     print(curr.data);
     curr = curr.next;
   }
-}
+}  
 ```
 
 **Challenge 4: Remove All Occurrences ->** Create a function that removes all occurrences of a specific element from a linked list. The implementation is similar to the removeAfter method that you implemented earlier
