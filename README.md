@@ -4,8 +4,8 @@
 ## Challenges:
 
 **Challenge 1: Reverse a List**
-Create a function that prints the contents of a list in reverse order.
-**my solution**
+- Create a function that prints the contents of a list in reverse order.
+- **my solution**
 
 ```dart
 void main() {
@@ -21,6 +21,6 @@ void main() {
 ```
 
 **Challenge 2: Balance the Parentheses**
-Check for balanced parentheses. Given a string, check if there are ( and ) characters, and return true if the parentheses in the string are balanced.
-**my solution**
+- Check for balanced parentheses. Given a string, check if there are ( and ) characters, and return true if the parentheses in the string are balanced.
+- **my solution**
 
