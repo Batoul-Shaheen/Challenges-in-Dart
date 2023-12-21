@@ -169,7 +169,15 @@ class Node {
   int value;
   Node? next;
 
-  Node(this.value, [this.next]);
+  Node(this.value) : next = null;
+
+  void addNode(int value) {
+    if (next == null) {
+      next = Node(value);
+    } else {
+      next!.addNode(value);
+    }
+  }
 }
 
 Node? removeAllOccurrences(Node? head, int targetValue) {
@@ -201,7 +209,11 @@ void printLinkedList(Node? head) {
 }
 
 void main() {
-  Node originalList = Node(1, Node(3, Node(3, Node(3, Node(4)))));
+  var originalList = Node(1);
+  originalList.addNode(3);
+  originalList.addNode(3);
+  originalList.addNode(3);
+  originalList.addNode(4);
 
   print('Before removing occurrences:');
   printLinkedList(originalList);
